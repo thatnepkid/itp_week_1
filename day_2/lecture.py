@@ -91,7 +91,7 @@ print(type(exampleInt))
 sum = 4 + 4
 sub = 1 - 100 # it can evaluate to negatives too!
 div = 10/5 # even if it divides evenly, it returns a float.
-floor = 10/3 # to only get whole numbers, we use floor division.
+floor = 10//3 # to only get whole numbers, we use floor division.
 
 # ASSIGNMENT OPERATORS
 
@@ -176,15 +176,14 @@ a <= b # True
 # or	Returns True if one of the statements is true	            x < 5 or x < 4
 # not	Reverse the result, returns False if the result is true	    not(x < 5 and x < 10)
 
-chesty_puller_age = 2021 - 1776
-college_graduate_age = 21
-able_to_rent_a_car = 25
-able_to_purchase_alcohol = 21
+num = 3
+num1 = 5
 
-chesty_puller_age >= able_to_purchase_alcohol and chesty_puller_age >= able_to_purchase_alcohol # True
-college_graduate_age >= able_to_purchase_alcohol and college_graduate_age >= able_to_rent_a_car # False
-college_graduate_age >= able_to_purchase_alcohol or college_graduate_age >= able_to_rent_a_car # True
-not(college_graduate_age >= able_to_purchase_alcohol and college_graduate_age >= able_to_rent_a_car) # True
+num < num1 and num == num1 
+
+num < num1 or num == num1
+
+not(num < num1 and num == num1)
 
 # IDENTITY OPERATORS
 
@@ -210,7 +209,7 @@ f = 33
 if e == f: # careful comparing equals
     print("e is equal to f")
 elif e > f:
-    print("He is greater than f")
+    print("e is greater than f")
 else:
     print("e is less than f")
 

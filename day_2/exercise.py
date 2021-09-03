@@ -11,3 +11,25 @@
 # Bonus: Add a validation by checking the type of the user input
 # to ensure it can be casted as an int. Handle any other input that
 # are not numbers to try again.
+
+
+user_age = input("Please enter your age: ")
+
+if(int(user_age) <= 20):
+    X =  21 - int(user_age) 
+    print("Come back in " + str(X) + " years.")
+else:
+    print("Welcome!")
+
+
+
+
+
+
+if(type(user_age) is str): #Validation for casting (BONUS)
+     print("It can be casted as an int.")
+
+else:
+     print("It cannot be casted as an int.")
+
+
